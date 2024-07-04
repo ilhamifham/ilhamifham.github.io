@@ -1,8 +1,16 @@
 const navButton = document.getElementById("navButton");
-navButton.addEventListener('click', () => {
+const sectionLinks = document.querySelectorAll("nav a");
+
+navButton.addEventListener('click', toggleNav);
+
+sectionLinks.forEach(sectionLink => {
+    sectionLink.addEventListener('click', toggleNav);
+});
+
+function toggleNav() {
     const nav = document.getElementById("nav");
-    nav.classList.toggle("max-h-screen");
-    nav.classList.toggle("overflow-visible");
-    nav.classList.toggle("visible");
-    nav.classList.toggle("opacity-100");
-})
+    const navClasses = ["max-h-screen", "overflow-visible", "visible", "opacity-100"];
+    for (navClass of navClasses) {
+        nav.classList.toggle(navClass);
+    }
+}
