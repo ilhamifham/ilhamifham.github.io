@@ -14,3 +14,26 @@ function toggleNav() {
         nav.classList.toggle(navClass);
     }
 }
+
+const themeButton = document.getElementById("themeButton");
+const moveCircle = document.querySelector("#themeButton div");
+
+function enableDarkMode() {
+    localStorage.setItem('dark', "true");
+    document.documentElement.classList.add("dark");
+    moveCircle.classList.add("move");
+}
+
+function disabledarkMode() {
+    localStorage.setItem('dark', "false");
+    document.documentElement.classList.remove("dark");
+    moveCircle.classList.remove("move");
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    localStorage.getItem('dark') === "true" ? enableDarkMode() : disabledarkMode();
+});
+
+themeButton.addEventListener('click', () => {
+    localStorage.getItem('dark') === "true" ? disabledarkMode() : enableDarkMode();
+});

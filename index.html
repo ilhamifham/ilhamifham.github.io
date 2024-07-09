@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -20,28 +20,34 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-200 text-gray-800">
-  <header class="fixed top-4 right-4 left-4 bg-white rounded-md">
+<body class="bg-slate-200 text-gray-800 duration-500">
+  <header class="fixed top-4 right-4 left-4 bg-white rounded-md duration-500">
     <div class="flex flex-wrap p-4 justify-between items-center max-w-5xl my-0 mx-auto">
-      <a class="bg-slate-200 p-1 rounded-full" href="#hero">
-        <div class="w-5 h-5 bg-slate-600 rounded-full"></div>
+      <a class="bg-slate-200 p-1 rounded-full duration-500" href="#hero">
+        <div class="w-5 h-5 bg-slate-600 rounded-full duration-500"></div>
       </a>
+      <button id="themeButton" class="theme-button p-1 rounded-full w-12 ml-auto mr-4 duration-500">
+        <div class="w-5 h-5 bg-black rounded-full duration-500"></div>
+      </button>
       <button id="navButton"
-        class="w-8 h-7 appearance-none bg-slate-200 rounded-md p-1 flex flex-col items-center justify-between gap-1	before:block after:block before:w-6 after:w-6 before:h-2 after:h-2 before:rounded-md after:rounded-md before:bg-slate-600 after:bg-slate-600 sm:hidden"></button>
+        class="duration-500 w-8 h-7 appearance-none bg-slate-200 rounded-md p-1 flex flex-col items-center justify-between gap-1	before:block after:block before:w-6 after:w-6 before:h-2 after:h-2 before:rounded-md after:rounded-md before:bg-slate-600 after:bg-slate-600 sm:hidden"></button>
       <nav id="nav"
-        class="w-full max-h-0 overflow-hidden opacity-0 duration-500 ease-linear sm:w-auto sm:max-h-screen sm:overflow-visible sm:visible sm:opacity-100">
+        class="w-full max-h-0 overflow-hidden opacity-0 duration-500 sm:w-auto sm:max-h-screen sm:overflow-visible sm:visible sm:opacity-100">
         <ul class="sm:flex gap-8">
           <li>
-            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins" href="#about">About</a>
+            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins duration-500"
+              href="#about">About</a>
           </li>
           <li>
-            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins" href="#skills">Skills</a>
+            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins duration-500"
+              href="#skills">Skills</a>
           </li>
           <li>
-            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins" href="#projects">Projects</a>
+            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins duration-500"
+              href="#projects">Projects</a>
           </li>
           <li>
-            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins duration-1000"
+            <a class="block text-lg font-medium text-slate-600 mt-4 sm:mt-0 font-poppins duration-500"
               href="#contact">Contact</a>
           </li>
         </ul>
@@ -51,15 +57,15 @@
   <main>
     <section id="hero" class="pt-48">
       <div class="pt-0 pr-8 pb-0 pl-8 max-w-3xl my-0 mx-auto">
-        <h1 class="text-5xl font-medium mb-2 font-poppins text-black">Ilham Ifham</h1>
+        <h1 class="text-5xl font-medium mb-2 font-poppins text-black duration-500">Ilham Ifham</h1>
         <p class="text-lg	font-mono">Frontend Developer</p>
-        <a class="inline-block text-sm font-medium pt-3 pr-6 pb-3 pl-6 mt-4 bg-white rounded-md text-slate-600 font-poppins"
+        <a class="inline-block text-sm font-medium pt-3 pr-6 pb-3 pl-6 mt-4 bg-white rounded-md text-slate-600 font-poppins duration-500"
           href="resume/ilhamifham_resume.pdf">Resume</a>
       </div>
     </section>
     <section id="about" class="pt-24">
       <div class="pt-0 pr-8 pb-0 pl-8 max-w-3xl my-0 mx-auto">
-        <h2 class="text-3xl font-medium mb-2 font-poppins text-black">About</h2>
+        <h2 class="text-3xl font-medium mb-2 font-poppins text-black duration-500">About</h2>
         <p class="font-mono">
           Hello! I'm Ilham Ifham, a passionate software developer with a unique
           blend of skill in front-end development. I thrive
@@ -71,40 +77,40 @@
     </section>
     <section id="skills" class="pt-24">
       <div class="pt-0 pr-8 pb-0 pl-8 max-w-3xl my-0 mx-auto">
-        <h2 class="text-3xl font-medium mb-4 font-poppins text-black">Skills</h2>
+        <h2 class="text-3xl font-medium mb-4 font-poppins text-black duration-500">Skills</h2>
         <ul class="flex flex-wrap gap-4">
-          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside">HTML</li>
-          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside">CSS</li>
-          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside">JavaScript</li>
-          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside">Tailwind CSS</li>
+          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside duration-500">HTML</li>
+          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside duration-500">CSS</li>
+          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside duration-500">JavaScript</li>
+          <li class="bg-white pr-2 pl-2 rounded-md font-poppins list-disc list-inside duration-500">Tailwind CSS</li>
         </ul>
       </div>
     </section>
     <section id="projects" class="pt-24">
       <div class="pt-0 pr-8 pb-0 pl-8 max-w-3xl my-0 mx-auto">
-        <h2 class="text-3xl font-medium mb-4 font-poppins text-black">Projects</h2>
+        <h2 class="text-3xl font-medium mb-4 font-poppins text-black duration-500">Projects</h2>
         <ul class="flex flex-wrap gap-4">
-          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block"
+          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block duration-500"
               href="https://cloudvistawebsite.netlify.app" target="_blank">CloudVista</a></li>
-          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block"
+          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block duration-500"
               href="https://atdigitalwebsite.netlify.app" target="_blank">AT Digital</a></li>
         </ul>
       </div>
     </section>
     <section id="contact" class="pt-24">
       <div class="pt-0 pr-8 pb-0 pl-8 max-w-3xl my-0 mx-auto">
-        <h2 class="text-3xl font-medium mb-4 font-poppins text-black">Contact</h2>
+        <h2 class="text-3xl font-medium mb-4 font-poppins text-black duration-500">Contact</h2>
         <ul class="flex flex-wrap gap-4">
-          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block"
+          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block duration-500"
               href="https://github.com/ilhamifham" target="_blank">GitHub</a></li>
-          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block"
+          <li><a class="bg-white pr-2 pl-2 rounded-md font-poppins text-slate-600 block duration-500"
               href="mailto:ilhaamifham@gmail.com">Email</a></li>
         </ul>
       </div>
     </section>
   </main>
   <footer class="pt-28 pr-4 pb-4 pl-4">
-    <div class="bg-white rounded-md p-4">
+    <div class="bg-white rounded-md p-4 duration-500">
       <p class="text-center text-xs font-poppins text-slate-500">Copyright &copy; 2024 Ilham Ifham.</p>
     </div>
   </footer>

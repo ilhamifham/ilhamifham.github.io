@@ -37,3 +37,82 @@ html {
 nav {
   visibility: hidden;
 }
+
+/* Colors */
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-slate-200 {
+  background-color: #e2e8f0;
+}
+
+.bg-slate-600 {
+  background-color: #475569;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-slate-500 {
+  color: #64748b;
+}
+
+.text-slate-600 {
+  color: #475569;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.theme-button {
+  background-color: rgba(0, 0, 0, 0.20);
+}
+
+.dark .bg-white {
+  background-color: #000000;
+}
+
+.dark .bg-black {
+  background-color: #ffffff;
+}
+
+.dark .bg-slate-200 {
+  background-color: rgb(30 41 59);
+}
+
+.dark .bg-slate-600 {
+  background-color: rgb(148 163 184);
+}
+
+.dark .text-black {
+  color: #ffffff;
+}
+
+.dark .text-slate-500 {
+  color: #64748b;
+}
+
+.dark .text-slate-600 {
+  color: rgb(148 163 184);
+}
+
+.dark .text-gray-800 {
+  color: rgb(156 163 175);
+}
+
+.dark .before\:bg-slate-600::before,
+.dark .after\:bg-slate-600::after {
+  background-color: rgb(148 163 184);
+}
+
+.dark .theme-button {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.move {
+  transform: translateX(100%);
+}
