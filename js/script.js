@@ -10,7 +10,7 @@ sectionLinks.forEach(sectionLink => {
 function toggleNav() {
     const nav = document.getElementById("nav");
     const navClasses = ["max-h-screen", "overflow-visible", "visible", "opacity-100"];
-    for (navClass of navClasses) {
+    for (const navClass of navClasses) {
         nav.classList.toggle(navClass);
     }
 }
