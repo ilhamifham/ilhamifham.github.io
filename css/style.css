@@ -146,9 +146,12 @@ h1 span:last-child {
     box-shadow: 5px 5px var(--bg-color), 5px 5px 0px 1px var(--h-color);
 }
 
+.card h3 {
+    font-size: 1.5rem;
+}
+
 .card h3,
 #about h3 {
-    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -170,6 +173,7 @@ footer p {
 
 #about h3 {
     margin-top: 3rem;
+    font-size: clamp(1.5rem, 9vw, 3rem);
     text-align: center;
 }
 
