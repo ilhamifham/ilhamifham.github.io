@@ -30,8 +30,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #000000;
-        --text-color: #FFFFFF;
-        --text-color-1: #D2D2D2;
+        --h-color: #FFFFFF;
+        --text-color: #D2D2D2;
     }
 }
 
@@ -132,7 +132,7 @@ h1 span:last-child {
     margin-bottom: 1.5rem;
 }
 
-#works ul {
+#works > ul {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -153,7 +153,6 @@ h1 span:last-child {
 .card h3,
 #about h3 {
     font-weight: 500;
-    margin-bottom: 1rem;
 }
 
 .card p i {
@@ -175,6 +174,7 @@ footer p {
     margin-top: 3rem;
     font-size: clamp(1.5rem, 9vw, 3rem);
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 #about p {
@@ -257,6 +257,23 @@ i {
     color: var(--h-color);
 }
 
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: flex-start;
+    margin: 0.25rem 0 0.5rem;
+}
+
+.tags li {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0 0.25rem;
+    display: inline-block;
+}
+
 @media only screen and (min-width: 600px) {
     header {
         display: flex;
@@ -274,7 +291,7 @@ i {
         flex-wrap: nowrap;
     }
 
-    #works ul {
+    #works > ul {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
