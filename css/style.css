@@ -23,17 +23,15 @@
 /* Variables */
 :root {
     --bg-color: #FFFFFF;
-    --text-color: #000000;
-    --bg-color-1: #F0F0F0;
-    --text-color-1: #0F0F0F;
+    --h-color: #000000;
+    --text-color: #2D2D2D;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #000000;
         --text-color: #FFFFFF;
-        --bg-color-1: #0F0F0F;
-        --text-color-1: #F0F0F0;
+        --text-color-1: #D2D2D2;
     }
 }
 
@@ -42,7 +40,7 @@ html {
     font-family: "Space Grotesk", sans-serif;
     line-height: 1.5;
     background-color: var(--bg-color);
-    color: var(--text-color-1);
+    color: var(--text-color);
     scroll-behavior: smooth;
 }
 
@@ -50,7 +48,7 @@ h1,
 h2,
 h3 {
     line-height: 1;
-    color: var(--text-color);
+    color: var(--h-color);
 }
 
 button {
@@ -61,7 +59,7 @@ button {
     font-family: "Edu VIC WA NT Beginner", cursive;
     font-weight: 500;
     font-size: 2rem;
-    color: var(--text-color);
+    color: var(--h-color);
     text-align: center;
 }
 
@@ -90,7 +88,11 @@ nav ul {
     font-weight: 500;
     gap: 1rem;
     font-size: 1.125rem;
-    color: var(--text-color);
+    color: var(--h-color);
+}
+
+nav ul a:hover {
+    text-decoration: underline;
 }
 
 #home {
@@ -105,7 +107,7 @@ nav ul {
 }
 
 #home h1 {
-    font-size: max(12vw, 2.25rem);
+    font-size: clamp(2rem, 13vw, 8.5rem);
     font-weight: 700;
     display: flex;
     text-transform: uppercase;
@@ -123,8 +125,8 @@ h1 span:last-child {
 #works h2,
 #about h2,
 #contact h2 {
-    font-size: max(6vw, 1.875rem);
-    font-weight: 700;
+    font-size: clamp(1.5rem, 11vw, 5rem);
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -138,15 +140,10 @@ h1 span:last-child {
 }
 
 .card {
-    background-color: var(--bg-color-1);
     display: block;
     padding: 1rem;
-    border-top: 1px;
-    border-right: 3px;
-    border-bottom: 3px;
-    border-left: 1px;
-    border-style: solid;
-    border-color: var(--text-color-1);
+    border: 1px solid var(--h-color);
+    box-shadow: 5px 5px var(--bg-color), 5px 5px 0px 1px var(--h-color);
 }
 
 .card h3,
@@ -192,14 +189,8 @@ footer p {
 
 #about ul i {
     font-size: 3rem;
-    background-color: var(--bg-color-1);
     padding: 2rem;
-    border-top: 1px;
-    border-right: 3px;
-    border-bottom: 3px;
-    border-left: 1px;
-    border-style: solid;
-    border-color: var(--text-color-1);
+    border: 1px solid var(--h-color);
     width: 7rem;
     display: flex;
     align-items: center;
@@ -223,7 +214,8 @@ footer p {
 
 form input,
 form textarea {
-    border: 1px solid var(--text-color-1);
+    border: 1px solid var(--h-color);
+    box-shadow: 5px 5px var(--bg-color), 5px 5px 0px 1px var(--h-color);
     padding: 0.5rem;
 }
 
@@ -234,19 +226,22 @@ form textarea {
 
 form button {
     padding: 0.5rem;
-    border-top: 1px;
-    border-right: 3px;
-    border-bottom: 3px;
-    border-left: 1px;
-    border-style: solid;
-    border-color: var(--text-color-1);
-    color: var(--text-color);
+    border: 1px solid var(--h-color);
+    color: var(--bg-color);
     font-weight: 500;
-    background-color: var(--bg-color-1);
+    background-color: var(--text-color);
+    box-shadow: 5px 5px var(--bg-color), 5px 5px 0px 1px var(--h-color);
+}
+
+#contact a {
+    border: 1px solid var(--h-color);
+    display: flex;
+    padding: 0.25rem;
+    box-shadow: 5px 5px var(--bg-color), 5px 5px 0px 1px var(--h-color);
 }
 
 #contact i {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 footer p {
@@ -255,7 +250,7 @@ footer p {
 }
 
 i {
-    color: var(--text-color);
+    color: var(--h-color);
 }
 
 @media only screen and (min-width: 600px) {
@@ -288,9 +283,4 @@ i {
         justify-content: center;
     }
 
-    .card:hover,
-    #about ul i:hover,
-    #contact form button:hover {
-        box-shadow: 2px 2px var(--text-color-1);
-    }
 }
