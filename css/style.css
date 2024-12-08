@@ -4,17 +4,9 @@
 
 /* Variables */
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #FFFFFF;
   --h-color: #000000;
   --text-color: #2d2d2d;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #000000;
-    --h-color: #ffffff;
-    --text-color: #d2d2d2;
-  }
 }
 
 /* Reset */
@@ -32,8 +24,9 @@
 }
 
 *:focus-visible {
-  outline: 2px solid var(--text-color);
+  outline: 2px solid var(--bg-color);
   outline-offset: 2px;
+  border-radius: 8px;
 }
 
 html {
@@ -41,15 +34,29 @@ html {
   font-family: "Space Grotesk", sans-serif;
   line-height: 1.5;
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--bg-color);
   scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../assets/gradient.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(25px);
+}
+
+.bg-gradient {
+  background-color: var(--text-color);
+  background-color: #FFFFFF25;
+  backdrop-filter: blur(10px);
 }
 
 h1,
 h2,
 h3 {
   line-height: 1;
-  color: var(--h-color);
+  color: var(--bg-color);
 }
 
 button {
@@ -60,7 +67,7 @@ button {
   font-family: "Edu VIC WA NT Beginner", cursive;
   font-weight: 500;
   font-size: 2rem;
-  color: var(--h-color);
+  color: var(--bg-color);
   text-align: center;
 }
 
@@ -89,7 +96,7 @@ nav ul {
   font-weight: 500;
   gap: 1rem;
   font-size: 1.125rem;
-  color: var(--h-color);
+  color: var(--bg-color);
 }
 
 #home {
@@ -139,12 +146,16 @@ h1 span:last-child {
 .card {
   display: block;
   padding: 1rem;
-  border: 1px solid var(--h-color);
+  background-color: #FFFFFF80;
+  border-radius: 8px;
+  border: 2px solid var(--bg-color);
+  color: #000000;
 }
 
 .card h3 {
   font-size: 1.5rem;
   font-weight: 500;
+  color: #000000;
 }
 
 .card p i {
@@ -174,11 +185,13 @@ footer p {
 #contact a {
   font-size: 3rem;
   padding: 2rem;
-  border: 1px solid var(--h-color);
+  background-color: #FFFFFF80;
   width: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
+  border: 2px solid var(--bg-color);
 }
 
 #contact div {
@@ -189,7 +202,7 @@ footer p {
 }
 
 #contact a {
-  border: 1px solid var(--h-color);
+  border: 2px solid var(--bg-color);
   display: flex;
   padding: 0.25rem;
 }
@@ -204,7 +217,7 @@ footer p {
 }
 
 i {
-  color: var(--h-color);
+  color: #000000;
 }
 
 .tags {
@@ -216,7 +229,8 @@ i {
 }
 
 .tags li {
-  background-color: var(--text-color);
+  background-color: #000000;
+  border-radius: 4px;
   color: var(--bg-color);
   font-weight: 500;
   font-size: 0.75rem;
