@@ -113,7 +113,7 @@ nav ul {
 #skills h2,
 #contact h2 {
   font-size: clamp(1.5rem, 11vw, 5rem);
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
