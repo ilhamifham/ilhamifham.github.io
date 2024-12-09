@@ -116,11 +116,14 @@ nav ul {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--text-color);
 }
 
 #skills h2,
 #contact h2 {
   text-align: right;
+  border-right: 1px solid var(--text-color);
+  padding-right: 0.8rem;
 }
 
 #skills ul,
@@ -128,7 +131,8 @@ nav ul {
 #contact ul {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  list-style-position: inside;
+  list-style-type: circle;
   gap: 2rem;
   font-size: 2.5rem;
   color: var(--text-color);
@@ -137,6 +141,11 @@ nav ul {
 #skills ul,
 #contact ul {
   justify-content: end;
+}
+
+#works h2 {
+  padding-left: 0.8rem;
+  border-left: 1px solid var(--text-color);
 }
 
 footer p {
