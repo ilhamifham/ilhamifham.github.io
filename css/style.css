@@ -53,6 +53,7 @@ p:nth-of-type(2) {
 
 a {
   position: relative;
+  white-space: nowrap;
 }
 
 a::after {
