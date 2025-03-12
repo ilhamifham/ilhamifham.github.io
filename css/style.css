@@ -72,7 +72,7 @@ a:hover::after {
   top: 0%;
 }
 
-@media screen and (min-height: 643px) {
+@media (min-width: 600px) and (min-height: 600px) {
   body {
     display: flex;
     flex-direction: column;
