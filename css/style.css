@@ -63,14 +63,8 @@ a::after {
   background-color: var(--flame);
   left: 0;
   right: 0;
-  top: 80%;
   bottom: 0;
-  z-index: -1;
-  transition: top 150ms;
-}
-
-a:hover::after {
-  top: 0%;
+  height: 2px;
 }
 
 @media (min-width: 40rem) and (min-height: 43.125rem) {
