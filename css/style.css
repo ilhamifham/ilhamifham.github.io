@@ -1,7 +1,7 @@
 :root {
   --bg-dark: hsl(0, 0%, 100%);
-  --bg: hsl(0, 0%, 97%);
-  --bg-light: hsl(0, 0%, 94%);
+  --bg: hsl(0, 0%, 95%);
+  --bg-light: hsl(0, 0%, 90%);
 
   --text-dark: hsl(0, 0%, 0%);
   --text: hsl(0, 0%, 15%);
@@ -13,8 +13,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-dark: hsl(0, 0%, 0%);
-    --bg: hsl(0, 0%, 3%);
-    --bg-light: hsl(0, 0%, 6%);
+    --bg: hsl(0, 0%, 5%);
+    --bg-light: hsl(0, 0%, 10%);
 
     --text-dark: hsl(0, 0%, 100%);
     --text: hsl(0, 0%, 85%);
@@ -121,12 +121,100 @@ section article:last-child {
 .certificate h2,
 .project h2 {
   margin-top: -0.3125rem;
-  margin-bottom: 0.6875rem;
+  margin-bottom: 1.1875rem;
 }
 
 .education article:first-of-type,
 .project article:first-of-type {
   border-bottom: 1px solid var(--bg-light);
   margin-bottom: 0.5rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5625rem;
+}
+
+.project h3 {
+  margin-bottom: 0.1875rem;
+}
+
+.skill h2 {
+  margin-top: -0.25rem;
+  margin-bottom: 1.1875rem;
+}
+
+.skill ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill ul li {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+}
+
+.html {
+  background-color: #e34f26;
+  color: black;
+}
+
+.css {
+  background-color: #1572b6;
+  color: white;
+}
+
+.sass {
+  background-color: #cc6699;
+  color: black;
+}
+
+.tailwindcss {
+  background-color: #06b6d4;
+  color: black;
+}
+
+.javascript {
+  background-color: #f7df1e;
+  color: black;
+}
+
+.typescript {
+  background-color: #3178c6;
+  color: black;
+}
+
+.react {
+  background-color: #61dafb;
+  color: black;
+}
+
+.nextjs {
+  background-color: #000000;
+  color: white;
+}
+
+.git {
+  background-color: #f05032;
+  color: black;
+}
+
+.github {
+  background-color: #181717;
+  color: white;
+}
+
+.parcel {
+  background-color: #ffcb13;
+  color: black;
+}
+
+.vite {
+  background-color: #646cff;
+  color: black;
+}
+
+.netlify {
+  background-color: #00c7b7;
+  color: black;
 }
