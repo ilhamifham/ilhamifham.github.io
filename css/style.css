@@ -247,6 +247,11 @@ ul {
   color: #000000;
 }
 
+.mysql {
+  background-color: #f29209;
+  color: #007690;
+}
+
 .git {
   background-color: #f05030;
   color: #ffffff;
