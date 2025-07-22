@@ -56,10 +56,6 @@ body {
 h1,
 h2 {
   line-height: 1;
-}
-
-h1,
-h2 {
   font-weight: 700;
   color: var(--text-dark);
 }
@@ -67,12 +63,6 @@ h2 {
 h3 {
   font-weight: 600;
   color: var(--text-dark);
-}
-
-.page {
-  padding: 2rem 1rem;
-  max-width: 48rem;
-  margin: 0 auto;
 }
 
 h1 {
@@ -96,6 +86,12 @@ ul {
 
 ::marker {
   color: var(--text-dark);
+}
+
+.page {
+  padding: 2rem 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
 }
 
 .card {
@@ -133,6 +129,7 @@ ul {
   margin-bottom: -0.4375rem;
 }
 
+.skill h2,
 .experience h2,
 .education h2,
 .certificate h2,
@@ -141,28 +138,10 @@ ul {
   margin-bottom: 1.1875rem;
 }
 
-.education article:first-of-type,
-.project article:first-of-type {
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 0.5rem;
-}
-
-.education article:first-of-type {
-  padding-bottom: 0.5625rem;
-}
-
-.project article:first-of-type {
-  padding-bottom: 1.125rem;
-}
-
+.skill h3,
 .experience address,
 .project h3 {
   margin-bottom: 0.1875rem;
-}
-
-.skill h2 {
-  margin-top: -0.25rem;
-  margin-bottom: 1.1875rem;
 }
 
 .skill ul {
@@ -177,6 +156,45 @@ ul {
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius);
   font-weight: 500;
+}
+
+.skill article:first-of-type {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+  margin-bottom: 0.4375rem;
+}
+
+.skill article:first-of-type li {
+  background-color: var(--bg-dark);
+  color: var(--text);
+}
+
+.experience article,
+.education article {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5625rem;
+  margin-bottom: 0.4375rem;
+}
+
+.experience article:last-of-type,
+.education article:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: -0.4375rem;
+}
+
+.certificate article,
+.project article {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+  margin-bottom: 0.4375rem;
+}
+
+.certificate article:last-of-type,
+.project article:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .html {
@@ -215,6 +233,16 @@ ul {
 }
 
 .nextjs {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.nodejs {
+  background-color: #76af64;
+  color: #303030;
+}
+
+.expressjs {
   background-color: #ffffff;
   color: #000000;
 }
@@ -229,7 +257,7 @@ ul {
   color: #ffffff;
 }
 
-.parcel {
+.parceljs {
   background-color: #dcaa77;
   color: #000000;
 }
