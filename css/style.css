@@ -40,8 +40,10 @@
 }
 
 *:focus-visible {
-  outline-offset: 2px;
-  outline-color: dodgerblue;
+  outline: 0;
+  outline-offset: 0;
+  outline-color: unset;
+  box-shadow: 0 0 0 2px dodgerblue;
 }
 
 html {
@@ -114,7 +116,7 @@ ul {
 .contact a {
   background-color: var(--bg);
   color: var(--text);
-  border: 1px solid var(--bg-light);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   display: inline-block;
   font-weight: 500;
@@ -125,7 +127,7 @@ ul {
   margin-top: 2rem;
   padding: 1rem;
   background-color: var(--bg);
-  border: 1px solid var(--bg-light);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
 }
 
@@ -171,7 +173,8 @@ ul {
   margin-bottom: 0.1875rem;
 }
 
-.skill ul {
+.skill ul,
+.education ul {
   padding-left: 0;
   list-style: none;
   display: flex;
@@ -179,7 +182,8 @@ ul {
   gap: 0.5rem;
 }
 
-.skill ul li {
+.skill li,
+.education li {
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius);
   font-weight: 500;
@@ -191,13 +195,13 @@ ul {
   margin-bottom: 0.4375rem;
 }
 
-.skill article:first-of-type li {
+.skill article:first-of-type li,
+.education li {
   background-color: var(--bg-light);
   color: var(--text-neutral);
 }
 
-.experience article,
-.education article {
+.experience article {
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.5625rem;
   margin-bottom: 0.4375rem;
@@ -210,6 +214,7 @@ ul {
   margin-bottom: -0.4375rem;
 }
 
+.education article,
 .certificate article,
 .project article {
   border-bottom: 1px solid var(--border);
@@ -217,6 +222,7 @@ ul {
   margin-bottom: 0.4375rem;
 }
 
+.education article:last-of-type,
 .certificate article:last-of-type,
 .project article:last-of-type {
   border-bottom: 0;
@@ -224,8 +230,12 @@ ul {
   margin-bottom: 0;
 }
 
-.project p {
+.project ul {
   margin-bottom: 0.125rem;
+}
+
+.education ul {
+  margin-top: 0.1875rem;
 }
 
 .html {
