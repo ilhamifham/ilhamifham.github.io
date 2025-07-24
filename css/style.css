@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 /* VARIABLES */
 :root {
   --bg-dark: hsl(0, 0%, 90%);
@@ -267,7 +269,7 @@ ul {
   margin-top: 0.4375rem;
 }
 
-/* COLORS */
+/* SKILLS LOGO COLORS */
 .html {
   background-color: #e54c21;
   color: #ffffff;
