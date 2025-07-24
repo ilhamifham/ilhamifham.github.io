@@ -144,6 +144,7 @@ ul {
 }
 
 .skills ul,
+.projects ul:first-of-type,
 .education ul {
   padding-left: 0;
   list-style: none;
@@ -153,6 +154,7 @@ ul {
 }
 
 .skills li,
+.projects ul:first-of-type li,
 .education li {
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius);
@@ -248,7 +250,7 @@ ul {
 
 /* PROJECTS */
 .projects h3 {
-  margin-bottom: 0.4375rem;
+  margin-bottom: 0.8125rem;
 }
 
 .projects ul {
