@@ -272,6 +272,12 @@ ul {
   margin-top: 0.4375rem;
 }
 
+.education .bold {
+  line-height: 1;
+  margin-top: 0.4375rem;
+  margin-bottom: 0.25rem;
+}
+
 /* CERTIFICATES */
 .certificates .button {
   margin-top: 0.4375rem;
