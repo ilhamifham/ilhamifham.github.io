@@ -193,6 +193,12 @@ ul {
   margin-bottom: 0;
 }
 
+.experience a,
+.education a,
+.certificates article a:first-of-type {
+  text-decoration: underline;
+}
+
 /* STYLES */
 .page {
   padding: 2rem 1rem;
@@ -209,6 +215,8 @@ ul {
 
 .page > div div {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -222,7 +230,7 @@ ul {
   padding: 0.25rem 0.5rem;
 }
 
-@media only screen and (min-width: 35.375rem) {
+@media only screen and (min-width: 41.125rem) {
   .page > div {
     justify-content: space-between;
   }
