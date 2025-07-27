@@ -229,7 +229,7 @@ ul {
   padding: 0.25rem 0.5rem;
 }
 
-@media only screen and (min-width: 36.75rem) {
+@media only screen and (min-width: 31rem) {
   .page > div {
     justify-content: space-between;
   }
