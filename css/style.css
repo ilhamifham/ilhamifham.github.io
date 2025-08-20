@@ -251,6 +251,10 @@ ul {
 }
 
 /* EXPERIENCE */
+.experience article {
+  padding-bottom: 0.5625rem;
+}
+
 .experience article:last-of-type {
   border-bottom: 0;
   padding-bottom: 0;
