@@ -161,15 +161,17 @@ ul {
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius);
   font-weight: 500;
-  flex: auto;
+  /* flex: auto; */
   text-align: center;
-}
-
-.skills article:first-of-type li,
-.education li {
   background-color: var(--bg-light);
   color: var(--text-neutral);
 }
+
+/* .skills article li,
+.education li {
+  background-color: var(--bg-light);
+  color: var(--text-neutral);
+} */
 
 .skills article:first-of-type,
 .experience article,
@@ -289,7 +291,7 @@ ul {
   margin-top: 0.4375rem;
 }
 
-/* SKILLS LOGO COLORS */
+/* SKILLS LOGO COLORS
 .html {
   background-color: #e54c21;
   color: #ffffff;
@@ -368,4 +370,4 @@ ul {
 .netlify {
   background-color: #00bebb;
   color: #004645;
-}
+} */
